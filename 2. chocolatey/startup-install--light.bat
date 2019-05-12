@@ -2,11 +2,11 @@
 echo Installing apps (Light)
 
 
+choco install -y 7zip
 choco install -y googlechrome
-choco install -y notepadplusplus.install
-choco install -y putty.install
-choco install -y 7zip.install
-choco install -y irfanviewplugins
+choco install -y irfanview
+choco install -y notepadplusplus
+choco install -y putty
 
 
 refreshenv
