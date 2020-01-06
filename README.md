@@ -6,6 +6,7 @@ Windows 10 setup scripts for fresh installs
 
 ### 1. Remove Bloatware
 Removes windows bloat - can configure how much/little to remove
+- __*Full credit to [Disassembler](https://github.com/Disassembler0/Win10-Initial-Setup-Script)*__
 
 ### 2. Install Software (Via [Chocolatey](https://chocolatey.org/))
 Install commonly used software

@@ -6,12 +6,13 @@ echo Installing Software
 choco install -y 7zip
 choco install -y googlechrome
 choco install -y irfanview
-choco install -y mpv
+choco install -y mpc-hc
 choco install -y notepadplusplus
 choco install -y putty
 
 
 #  media
+choco install -y mpv
 choco install -y foobar2000
 choco install -y irfanviewplugins
 choco install -y plexmediaplayer
