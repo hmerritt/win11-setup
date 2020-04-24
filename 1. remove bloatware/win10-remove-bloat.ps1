@@ -60,7 +60,7 @@ $tweaks = @(
 	#"DisableRemoteAssistance",      # "EnableRemoteAssistance",
 	"EnableRemoteDesktop",          # "DisableRemoteDesktop",
 	#"DisableAutoplay",              # "EnableAutoplay",
-	#"DisableAutorun",               # "EnableAutorun",
+	"DisableAutorun",               # "EnableAutorun",
 	# "EnableStorageSense",         # "DisableStorageSense",
 	# "DisableDefragmentation",     # "EnableDefragmentation",
 	# "DisableSuperfetch",          # "EnableSuperfetch",
@@ -134,8 +134,8 @@ $tweaks = @(
 	# "UninstallMediaPlayer",       # "InstallMediaPlayer",
 	# "UninstallInternetExplorer",  # "InstallInternetExplorer",
 	# "UninstallWorkFolders",       # "InstallWorkFolders",
-	# "InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
-	# "InstallHyperV",              # "UninstallHyperV",
+	"InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
+	"InstallHyperV",              # "UninstallHyperV",
 	#"SetPhotoViewerAssociation",   # "UnsetPhotoViewerAssociation",
 	#"AddPhotoViewerOpenWith",      # "RemovePhotoViewerOpenWith",
 	# "UninstallPDFPrinter",        # "InstallPDFPrinter",
@@ -156,8 +156,8 @@ $tweaks = @(
 	# "UnpinTaskbarIcons",
 
 	### Auxiliary Functions ###
-	"WaitForKey",
-	"Restart"
+	"WaitForKey"
+	#"Restart"
 )
 
 
