@@ -1,5 +1,5 @@
 
-echo Installing Scoop
+echo "Installing Scoop"
 
 
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
