@@ -6,17 +6,17 @@ echo "Installing Software"
 scoop install 7zip
 scoop install googlechrome
 scoop install irfanview
+scoop install irfanviewplugins
 scoop install mpc-hc
 scoop install notepadplusplus
 scoop install putty
 
 
 #  media
-scoop install mpv
 scoop install foobar2000
-#scoop install irfanviewplugins
-scoop install plex-player
-scoop install webtorrent
+scoop install mpv
+#scoop install plex-player
+#scoop install webtorrent
 
 
 #  social
@@ -25,10 +25,16 @@ scoop install discord
 scoop install steam
 
 
-#  coding
-scoop install atom
-scoop install gitkraken
-scoop install mremoteng
+#  programming
+#scoop install atom
+#scoop install gitkraken
+#scoop install mremoteng
+scoop install vscode
+scoop install insomnia
+
+#  programming languages
+scoop install go
+scoop install tinygo
 scoop install nodejs
 scoop install python
 
@@ -43,7 +49,9 @@ scoop install youtube-dl
 
 # security
 scoop install keeweb
+scoop install malwarebytes
 scoop install openvpn
+scoop install veracrypt
 
 
 #  tools
@@ -52,14 +60,12 @@ scoop install everything
 scoop install flux
 #scoop install google-backup-and-sync
 scoop install handbrake
-#scoop install malwarebytes
 scoop install mp3tag
 scoop install speccy
 scoop install spek
-scoop install syncthing
+#scoop install syncthing
 scoop install sysinternals
 #scoop install unifiedremote
-#scoop install veracrypt
 scoop install winscp
 
 
