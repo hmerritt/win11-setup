@@ -8,4 +8,5 @@ Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.
 refreshenv
 
 scoop bucket add extras
+scoop bucket add nonportable
 scoop bucket add hmerritt https://github.com/hmerritt/scoop-bucket
