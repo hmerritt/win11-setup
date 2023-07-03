@@ -15,6 +15,7 @@ scoop install putty
 #  media
 scoop install foobar2000
 scoop install mpv
+scoop install vlc
 #scoop install plex-player
 #scoop install webtorrent
 
@@ -24,6 +25,8 @@ scoop install mpv
 scoop install insomnia
 #scoop install ten-hands
 scoop install vscode
+scoop install gcc
+scoop install make
 
 #  programming languages
 scoop install go
@@ -37,14 +40,19 @@ scoop install tinygo
 
 #  cli
 scoop install aria2
+scoop install cloc
 scoop install composer
 scoop install curl
+scoop install dark
 scoop install dezoomify-rs
 scoop install ffmpeg
 scoop install fspop
+scoop install gifski
 scoop install git
+scoop install grep
 scoop install jq
 scoop install mediainfo
+scoop install nconvert
 scoop install nssm # the Non-Sucking Service Manager
 scoop install youtube-dl
 scoop install yt-dlp
@@ -66,7 +74,6 @@ scoop install CrystalDiskMark
 scoop install dupeguru
 scoop install everything
 scoop install flac
-scoop install flux
 #scoop install google-backup-and-sync
 scoop install handbrake
 scoop install losslesscut
@@ -74,6 +81,7 @@ scoop install mkvtoolnix
 scoop install mp3tag
 scoop install rufus
 scoop install scoop-search
+scoop install sharex
 scoop install soulseekqt
 scoop install speccy
 scoop install spek
