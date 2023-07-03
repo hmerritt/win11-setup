@@ -79,8 +79,8 @@ scoop install speccy
 scoop install spek
 scoop install sshfs-np
 scoop install starship
-#scoop install syncthing
-scoop install sysinternals
+scoop install syncthing
+#scoop install sysinternals
 #scoop install unifiedremote
 scoop install windirstat
 scoop install winfsp-np
