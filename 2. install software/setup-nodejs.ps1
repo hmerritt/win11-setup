@@ -15,7 +15,7 @@ yarn set version stable
 
 
 # Global installs
-#npm -g i tsc nx
+npm -g i tsc nx
 
 
 refreshenv
