@@ -4,7 +4,7 @@ echo "Installing Software"
 
 #  essential
 scoop install 7zip
-scoop install googlechrome
+#scoop install googlechrome # Install Chrome manually for updates to work
 scoop install irfanview
 scoop install irfanviewplugins
 scoop install mpc-hc
