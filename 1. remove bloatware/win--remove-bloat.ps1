@@ -12,7 +12,7 @@ $tweaks = @(
 
 	### Privacy Tweaks ###
 	"DisableTelemetry",             # "EnableTelemetry",
-	"DisableWiFiSense",             # "EnableWiFiSense",
+	#"DisableWiFiSense",             # "EnableWiFiSense",
 	"DisableSmartScreen",           # "EnableSmartScreen",
 	#"DisableWebSearch",            # "EnableWebSearch",
 	"DisableAppSuggestions",        # "EnableAppSuggestions",
@@ -58,7 +58,7 @@ $tweaks = @(
 	# "DisableHomeGroups",          # "EnableHomeGroups",
 	#"DisableSharedExperiences",     # "EnableSharedExperiences",
 	#"DisableRemoteAssistance",      # "EnableRemoteAssistance",
-	"EnableRemoteDesktop",          # "DisableRemoteDesktop",
+	#"EnableRemoteDesktop",          # "DisableRemoteDesktop",
 	#"DisableAutoplay",              # "EnableAutoplay",
 	"DisableAutorun",               # "EnableAutorun",
 	# "EnableStorageSense",         # "DisableStorageSense",
@@ -88,8 +88,8 @@ $tweaks = @(
 	#"SetTaskbarCombineWhenFull",    # "SetTaskbarCombineNever",     # "SetTaskbarCombineAlways",
 	#"HideTaskbarPeopleIcon",        # "ShowTaskbarPeopleIcon",
 	#"ShowTrayIcons",                # "HideTrayIcons",
-	"DisableSearchAppInStore",      # "EnableSearchAppInStore",
-	"DisableNewAppPrompt",          # "EnableNewAppPrompt",
+	#"DisableSearchAppInStore",      # "EnableSearchAppInStore",
+	#"DisableNewAppPrompt",          # "EnableNewAppPrompt",
 	# "SetControlPanelSmallIcons",  # "SetControlPanelLargeIcons",  # "SetControlPanelCategories",
 	#"SetVisualFXPerformance",       # "SetVisualFXAppearance",
 	# "AddENKeyboard",              # "RemoveENKeyboard",
@@ -116,8 +116,8 @@ $tweaks = @(
 	# "HidePicturesFromExplorer",   # "ShowPicturesInExplorer",
 	#"HideVideosFromThisPC",         # "ShowVideosInThisPC",
 	# "HideVideosFromExplorer",     # "ShowVideosInExplorer",
-	"Hide3DObjectsFromThisPC",      # "Show3DObjectsInThisPC",
-	"Hide3DObjectsFromExplorer",  # "Show3DObjectsInExplorer",
+	#"Hide3DObjectsFromThisPC",      # "Show3DObjectsInThisPC",
+	#"Hide3DObjectsFromExplorer",  # "Show3DObjectsInExplorer",
 	# "DisableThumbnails",          # "EnableThumbnails",
 	#"DisableThumbnailCache",        # "EnableThumbnailCache",
 	#"DisableThumbsDBOnNetwork",     # "EnableThumbsDBOnNetwork",
@@ -1936,7 +1936,7 @@ Function UninstallMsftBloat {
 	Get-AppxPackage "Microsoft.BingSports" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.BingTranslator" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.BingWeather" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.CommsPhone" | Remove-AppxPackage
+	#Get-AppxPackage "Microsoft.CommsPhone" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.ConnectivityStore" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.GetHelp" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Getstarted" | Remove-AppxPackage
@@ -1947,23 +1947,23 @@ Function UninstallMsftBloat {
 	Get-AppxPackage "Microsoft.MicrosoftSolitaireCollection" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.MicrosoftStickyNotes" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.MinecraftUWP" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.MSPaint" | Remove-AppxPackage
+	#Get-AppxPackage "Microsoft.MSPaint" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.NetworkSpeedTest" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Office.OneNote" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Office.Sway" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.OneConnect" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.People" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Print3D" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.RemoteDesktop" | Remove-AppxPackage
+	#Get-AppxPackage "Microsoft.RemoteDesktop" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.SkypeApp" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Wallet" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.WindowsAlarms" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.WindowsCamera" | Remove-AppxPackage
+	#Get-AppxPackage "Microsoft.WindowsCamera" | Remove-AppxPackage
 	Get-AppxPackage "microsoft.windowscommunicationsapps" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.WindowsFeedbackHub" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.WindowsMaps" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.WindowsPhone" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.Windows.Photos" | Remove-AppxPackage
+	#Get-AppxPackage "Microsoft.Windows.Photos" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.WindowsSoundRecorder" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.ZuneMusic" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.ZuneVideo" | Remove-AppxPackage
