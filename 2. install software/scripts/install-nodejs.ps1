@@ -3,8 +3,8 @@ echo "Setting up Node.js with yarn"
 
 
 #  Nvm install
-nvm install 20.3.1
-nvm use 20.3.1
+nvm install 20.8.0
+nvm use 20.8.0
 refreshenv
 
 
