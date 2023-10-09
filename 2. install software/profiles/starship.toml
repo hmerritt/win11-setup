@@ -1,0 +1,32 @@
+add_newline = false
+
+[line_break]
+disabled = true
+
+[character]
+#symbol = "❯"
+#style_success = "bold white"
+
+[directory]
+truncation_length = 4
+#style = "bold white"
+
+
+[cmd_duration]
+min_time = 50
+
+
+#[git_status]
+#disabled = true
+
+[golang]
+symbol = "Go "
+
+
+# Disable language version number
+#[nodejs]
+#disabled = true
+[rust]
+disabled = true
+[aws]
+disabled = true
