@@ -1,0 +1,21 @@
+#
+# Disable Windows Defender (real-time monitoring)
+#
+
+
+# Method 1.
+1. Open gpedit.msc
+2. Computer Configuration -> Administrative Templates -> Windows Components
+3. Enable "Turn off Microsoft Defender Antivirus"
+
+
+# Method 2.
+1. Open Task scheduler
+2. Task Scheduler Library -> Microsoft -> Windows -> Windows Defender
+3. Select all tasks and disable them
+
+
+# Method 3.
+1. Use https://github.com/ionuttbara/windows-defender-remover
+2. Download latest from Releases and follow their instructions
+
