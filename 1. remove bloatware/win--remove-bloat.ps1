@@ -52,6 +52,7 @@ $tweaks = @(
 	# "EnableMeltdownCompatFlag"    # "DisableMeltdownCompatFlag",
 
 	### Service Tweaks ###
+	"DisableMemoryCompression",   # "EnableMemoryCompression",
 	# "DisableUpdateMSRT",          # "EnableUpdateMSRT",
 	# "DisableUpdateDriver",        # "EnableUpdateDriver",
 	#"DisableUpdateRestart",         # "EnableUpdateRestart",
@@ -814,6 +815,18 @@ Function DisableMeltdownCompatFlag {
 ##########
 # Service Tweaks
 ##########
+
+# Enable memory compression
+Function EnableMemoryCompression {
+	Write-Output "Enabling memory compression..."
+	Enable-MMAgent -mc
+}
+
+# Disable memory compression
+Function DisableMemoryCompression {
+	Write-Output "Disabling memory compression..."
+	Disable-MMAgent -mc
+}
 
 # Disable offering of Malicious Software Removal Tool through Windows Update
 Function DisableUpdateMSRT {
