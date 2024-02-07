@@ -21,10 +21,11 @@ Set-Alias yt yt-dlp
 
 
 ### >>>>>>>>>          Custom functions        <<<<<<<<< ###
+
+#
+# Quickly encode video with `hevc_nvenc`
+#
 function encode {
-	#
-	# Quickly encode video with `hevc_nvenc`
-	#
 	[CmdletBinding()]
     param(
         [string]$inputVideo = "",
@@ -55,3 +56,36 @@ function encode {
 
     ffmpeg -i "${inputVideo}" -c:a copy -c:v hevc_nvenc -qp "${qp}" -preset p7 -multipass fullres "${outputVideo}"
 }
+
+#
+# Quickly encode (either video or audio) to WAV
+#
+function towav {
+	[CmdletBinding()]
+    param(
+			[string]$inputFile = "",
+			[string]$outputFile = ""
+    )
+
+	if ([string]::IsNullOrWhiteSpace($outputFile)) {
+		$outputFile = "audio.wav"
+	}
+
+	$outputFile = $outputFile + ".wav"
+	$outputFile = $outputFile -replace '.wav.wav','.wav'
+	
+	Write-Host "To WAV [${inputFile} -> ${outputFile}]"
+	Write-Host ""
+
+	if ([string]::IsNullOrWhiteSpace($inputFile)) {
+		Write-Host "ERROR: Input video not provided"
+		Write-Host ""
+		Write-Host "Help:"
+		Write-Host "$ encode <input file> <quality level (15-40)> <output file>"
+		Write-Host "$ encode input.mp4 25 output.mp4"
+		return
+	}
+
+	ffmpeg -i "${inputFile}" "${outputFile}"
+}
+
