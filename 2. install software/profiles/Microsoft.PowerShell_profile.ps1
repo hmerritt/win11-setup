@@ -24,6 +24,18 @@ Set-Alias yt yt-dlp
 ### >>>>>>>>>          Custom functions        <<<<<<<<< ###
 
 #
+# Start a DLNA video stream server in the current directory.
+#
+function vstream {
+	if (-not (Get-Command -Name "dms" -ErrorAction SilentlyContinue)) {
+		Write-Host "dms not found. Installing..."
+		go get github.com/anacrolix/dms
+		go install github.com/anacrolix/dms
+	}
+	dms -noTranscode $args
+}
+
+#
 # Quickly encode video with `hevc_nvenc`
 #
 function encode {
@@ -31,7 +43,7 @@ function encode {
     param(
 				[string]$inputVideo = "",
 				[int]$qp = 25,
-				[int]$volume = "1.0",
+				[string]$volume = "1.0",
 				[string]$outputVideo = ""
     )
 
@@ -56,7 +68,7 @@ function encode {
 	Write-Host "Output:  ${outputVideo}"
 	Write-Host ""
 
-    ffmpeg -i "${inputVideo}" -c:a copy -c:v hevc_nvenc -filter:a "volume=${volume}" -qp "${qp}" -preset p7 -multipass fullres -pix_fmt yuv420p "${outputVideo}"
+    ffmpeg -i "${inputVideo}" -c:a aac -b:a 320k -c:v hevc_nvenc -filter:a "volume=${volume}" -qp "${qp}" -preset p7 -multipass fullres -pix_fmt yuv420p "${outputVideo}"
 }
 
 #

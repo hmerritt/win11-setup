@@ -7,5 +7,6 @@
 
 
 :: >>>>>>>>>              Aliases             <<<<<<<<< ::
+DOSKEY which=where $*
 DOSKEY dl=aria2c $*
 DOSKEY yt=yt-dlp $*
