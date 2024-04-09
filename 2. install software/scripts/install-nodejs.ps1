@@ -12,6 +12,7 @@ refreshenv
 corepack enable
 corepack prepare yarn@stable --activate
 yarn set version stable
+yarn plugin import interactive-tools
 
 
 # Global installs
