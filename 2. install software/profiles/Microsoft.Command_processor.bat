@@ -2,7 +2,7 @@
 ::
 :: CMD set profile.
 ::
-:: 1. Regedit `Computer\HKEY_CURRENT_USER\Software\Microsoft\Command Processor`
+:: 1. Regedit `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor`
 :: 2. Add key `Autorun` with string value with the location of this file
 
 

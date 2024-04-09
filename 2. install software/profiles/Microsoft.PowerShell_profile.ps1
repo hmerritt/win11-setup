@@ -12,6 +12,7 @@ function Invoke-Starship-PreCommand {
 ### >>>>>>>>>              Plugins             <<<<<<<<< ###
 Invoke-Expression (&starship init powershell)
 Invoke-Expression (&scoop-search --hook)
+Invoke-Expression (& { (zoxide init powershell | Out-String) })
 
 
 ### >>>>>>>>>              Aliases             <<<<<<<<< ###
